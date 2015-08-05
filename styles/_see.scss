@@ -1,0 +1,47 @@
+header.sights {
+		@include header ($pine, '../images/Mission_San_Diego_de_Alcala.jpg', 80);
+		background-position: center;
+		position: relative;
+	}
+
+
+div.source.serra {
+	background: $pine;
+	color: $ltText;
+	@include link ($ltText, $highlight, $pine);
+	text-align: center;
+	p {
+		font-size: .85rem;
+	}
+	a {
+		font-size: .85rem;
+	}
+}
+
+section.sights {
+	background: $pine;
+	color: $ltText;
+	@include link ($ltText, $highlight, $pine);
+	}
+
+#tower, #zoo {
+	float: left;
+	margin-right: 3%;
+	width: 25%;
+}
+
+
+
+.tips {
+	@include tips ($highlight, $pine);
+}
+
+ul.main {
+	li.nav.sights {
+		background: $pine;
+		a.sights {
+			color: $ltText;
+			border-bottom: 5px solid $highlight;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+header.home {
+		@include header ($dkBlue, '../images/surfer.jpg', 100);
+	}
+
+
+.intro {
+	color: $ltText;
+	@include link ($ltText, $highlight, $dkBlue);
+
+}
+
+.video iframe {
+	margin: 0 auto;
+}
+
+
+ul.main {
+	li.nav.home {
+		background: $dkBlue;
+		a.home {
+			color: $ltText;
+			border-bottom: 5px solid $highlight;
+		}
+	}
+}

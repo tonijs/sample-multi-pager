@@ -1,0 +1,24 @@
+header.eat {
+		@include header ($brown, '../images/gaslamp.jpg', 75);
+		background-position: center;
+	}
+
+
+
+
+section.eat {
+	background: $brown;
+	color: $ltText;
+	@include link ($ltText, $highlight, $brown);
+}
+
+
+ul.main {
+	li.nav.eats {
+		background: $brown;
+		a.eats {
+			color: $ltText;
+			border-bottom: 5px solid $highlight;
+		}
+	}
+}

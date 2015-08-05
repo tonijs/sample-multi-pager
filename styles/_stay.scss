@@ -1,0 +1,55 @@
+header.stay {
+		@include header ($ltBlue, '../images/hoteldel.jpg', 75);
+		background-position: center;
+	}
+
+
+div.source.hotel {
+	background: $ltBlue;
+	color: $dkText;
+	@include link ($dkText, $ltBrown, $ltBlue);
+	text-align: center;
+	p {
+		font-size: .85rem;
+	}
+	a {
+		font-size: .85rem;
+	}
+}
+
+section.stay {
+	background: $ltBlue;
+	color: $dkText;
+	@include link ($dkText, $ltBrown, $ltBlue)
+}
+
+#grant {
+	float: left;
+	width: 20%;
+	margin-right: 2%;
+}
+
+
+ul.main {
+	li.nav.stay {
+		background: $ltBlue;
+		a.stay {
+		color: $dkText;
+		border-bottom: 5px solid $ltBrown;
+		}
+	}
+}
+
+
+
+aside.transit {
+	margin: 0 auto;
+	width: 90%;
+	border : 4px solid $ltBrown;
+	border-radius: 15px;
+	padding: 2%;
+	background: lighten($ltBlue, 10%);
+	p, ul {
+		font-size: .9rem;
+	}
+}

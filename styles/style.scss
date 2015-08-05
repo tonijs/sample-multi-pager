@@ -1,0 +1,131 @@
+// normalize and border-box
+
+@import "setup";
+@import "juicy";
+// @import "magnific";
+
+
+// font variables
+
+$baseFont: 'Nobile', sans-serif;
+$headingFont: 'Fauna One', serif;
+$titleFont: 'Pacifico', cursive;
+$accentFont: 'Josefin Sans', sans-serif;
+
+// color variables
+
+$dkBlue: #223344;
+$ltBlue:  #8899aa;
+$frosted: transparentize(#cccccc, 0.3);
+$frostedMenu:  transparentize(#cccccc, 0.2);
+$ltText: #BEEB9F;
+$dkText: #260F08;
+$pine: #446655;
+$brown: #251e16;
+$ltBrown: #eeddcc;
+$sand: #aa9988;
+$sky:  lighten(#5599dd, 20%);
+$highlight: #7DE0E5;
+$sign: #119999;
+
+
+
+//mixins
+
+@mixin buttonHover($fz, $bc) {
+	background: $frosted;
+	border: 1px solid $bc;
+	font-size: $fz+px
+}
+
+
+
+// @mixin linkHover($tc, $bgc, $hlc) {
+// background: linear-gradient(
+// 				      $bgc,
+// 				      $bgc 75%,
+// 				      $hlc 75%,
+// 				      $hlc 100%);
+// 	color: $tc;
+// }
+
+// styling for all page headers
+
+@mixin header ($bc, $img, $vh) {
+		background: $bc url($img);
+		background-size: cover;
+		height: $vh+vh;
+}
+
+
+// adds the thicker bottom border to all hovered links
+
+@mixin link ($txtc, $hlc, $bgc) {
+	a {
+		color: $txtc;
+		border-bottom: 5px solid $hlc;
+		font-size: 1.2rem;
+		font-weight: bold;
+		transition: all .5s;
+	}
+	a:hover {
+		background: linear-gradient(
+				      $bgc,
+				      $bgc 75%,
+				      $hlc 75%,
+				      $hlc 100%
+			);
+
+	}
+}
+
+
+// default styling for tips sections, if i use them
+
+@mixin tips($bc, $bgc) {
+	width: 70%;
+	border: 5px solid $bc;
+	background: darken($bgc, 5%);
+	margin: 0 auto;
+	padding: 0 1%;
+	border-radius: 15px;
+}
+
+// to change the colors of the hamburger menu link using the midnight plugin
+
+@mixin midNight($bg, $tc) {
+		background: $bg;
+		color: $tc;		
+}
+
+
+
+
+
+
+// default site-wide styles
+
+@import "baseStyle";
+
+
+
+// top nav and footer for all pages
+
+@import "siteNav";
+
+
+
+
+// individual page styles
+
+@import "index";
+@import "when";
+@import "see";
+@import "eat";
+@import "stay";
+@import "nearby";
+@import "footer";
+
+
+
+

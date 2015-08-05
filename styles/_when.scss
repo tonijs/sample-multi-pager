@@ -1,0 +1,21 @@
+header.when {
+		@include header (lighten($sky, 20%), '../images/ocean-beach-cliff-robbye.jpeg', 75);
+		background-position: center;
+	}
+
+section.when {
+	background: $sky;
+	color: $dkText;
+		@include link ($dkText, $ltBrown, $sky);
+}
+
+ul.main {
+	li.when {
+		background:$sky;
+		a.when {
+			color: $dkText;
+			border-bottom: 5px solid $ltBrown;
+		}
+	}
+}
+

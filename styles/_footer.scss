@@ -1,0 +1,149 @@
+// site-widefooter
+
+	footer {
+		background: $ltBrown;
+	}
+
+	ul.footer {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		text-align: center;
+		li {
+			flex: 1 0 auto;
+			@include link ($dkText, $sky, $ltBrown);
+			a {
+				font-size: 1.2rem;
+				font-weight: bold;
+			}
+			
+		}
+	}
+
+
+#weather p {
+	font-size: 1.2rem;
+	font-weight: bold;
+	font-family: $accentFont;
+	color: $dkText;
+ 	text-align: center;
+ 	margin: 0;
+}
+
+
+
+header.resources {
+		@include header ($brown, '../images/Geisel_Library.JPG', 75);
+		background-position: center;
+	}
+
+header.maps {
+		@include header ($brown, '../images/fountain.jpg', 75);
+		background-position: bottom;
+	}
+
+
+
+
+
+
+
+div.source.contact {
+	background: $dkBlue;
+	color: $ltText;
+	@include link ($ltText, $highlight, $dkBlue);
+	text-align: center;
+	p {
+		font-size: .75rem;
+	}
+	a {
+		font-size: .75rem;
+	}
+}
+
+
+// Contact page
+
+header.contact {
+		@include header ($brown, '../images/San_Diego_Reflecting_Pond.jpg', 75);
+		background-position: center;
+	}
+
+
+h3.comments {
+	text-align: center;
+}
+
+
+
+
+// form on the contact page
+
+.contactForm {
+	width: 75%;
+	margin: 0 auto;
+}
+
+input, textarea {
+	outline: 0;
+	width: 100%;
+	margin: 0 auto;
+	transition: all .5s;
+	margin-bottom: 1%;
+	font-family: $baseFont;
+	@include placeholder-color($color: $ltText)
+}
+
+
+input[type=text], input[type=email], textarea {
+	background: $dkBlue;
+	padding: 1%;
+	color:$ltText;
+		border: 1px solid $sky;
+}
+
+
+input[type=text]:hover, input[type=email]:hover, textarea:hover {
+	background: transparentize($sky, 0.5);
+	}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+	background: $sky;
+	color: $dkText;
+	}
+
+
+input[type=submit] {
+	font-size: 1.5rem;
+	font-family: $titleFont;
+	background: transparentize($sky, 0.5);
+	letter-spacing: 1.5px;
+	border: 1px solid transparentize($sky, 0.7);
+}
+
+input[type=submit]:hover {
+	background: $sky;
+	border: 1px solid $sky;
+}
+
+// input::-webkit-input-placeholder {
+// 	color: $dkText;
+// 	font-size: .8rem;	
+// }
+
+// input::-moz-placeholder {
+// 	color: $dkText;
+// 	font-size: .8rem;	
+// }
+
+// input:-moz-placeholder {   /* Older versions of Firefox */
+// 	color: $dkText;
+// 	font-size: .8rem;		
+// }
+
+// input:-ms-input-placeholder { 
+// 	color: $dkText;
+// 	font-size: .8rem;	
+// }
+
+

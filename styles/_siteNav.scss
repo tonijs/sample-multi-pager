@@ -1,0 +1,99 @@
+	//top nav w/slide out
+
+
+	nav.siteMenu{
+		background-color: $frosted;
+		ul.main {
+			display: flex;
+			flex-direction: column;
+			list-style: none;
+			padding: 0;
+			li.nav {
+				flex: 1 0 auto;
+				padding: 15% 5% 5%;
+				a {
+					color: $dkBlue;
+					font-family: $accentFont;
+					font-size: 1.4rem;
+					letter-spacing: 1.5px;
+					font-weight: bold;	
+					display: block;	
+					transition: all .5s;
+				}
+				a:hover {
+					// background: linear-gradient(
+				 //      $frosted,
+				 //      $frosted 75%,
+				 //      $sign 75%,
+				 //      $sign 100%);				
+						letter-spacing: 2px;
+				}
+			}
+		}
+	}
+
+	// identify wich content areas are pushed right when the menu slides open
+
+	div.push {
+		position: relative;
+	}
+
+	// styling for the hamburger menu link
+
+	nav.fixed {
+		position: fixed;			
+		a {
+			// @include midNight($frosted, $dkBlue);	
+			font-size: 1.75rem;		
+			display: block;
+			width: 50px;
+			line-height: 1;
+			padding: 10px;
+			text-align: center;
+		}
+	}
+
+
+
+	// special classes for use with midnight.js, for changing the hamburger menu link as the page is scrolled
+
+	.midnightHeader {
+		font-size: 1.75rem;		
+		display: block;
+		width: 50px;
+		line-height: 1;
+		padding: 10px;
+		text-align: center;
+	}
+
+
+	.midnightHeader.default a {
+		@include midNight($frosted, $dkBlue);
+	}
+
+	.midnightHeader.home a {
+		@include midNight($ltText, $dkBlue);
+	}
+
+	.midnightHeader.eats a {
+		@include midNight($ltText, $brown);
+	}
+
+	.midnightHeader.when a {
+		@include midNight($dkText, $sky);
+	}
+
+	.midnightHeader.see a {
+		@include midNight($ltText, $pine);
+	}
+
+	.midnightHeader.near a {
+		@include midNight(#eee, $sign);
+	}
+
+	.midnightHeader.where a {
+		@include midNight($dkText, $ltBlue);
+	}
+
+
+

@@ -1,4 +1,8 @@
 	$(document).ready(function() {
+		
+// changes the style of the hamburger menu link as the page is scrolled
+
+        $('nav.fixed').midnight();
 
 // slide out menu, including pushing the content over		
         $('.menu-link').bigSlide({
@@ -11,9 +15,7 @@
 
         $('#menu').smoothState();
 
-// changes the style of the hamburger menu link as the page is scrolled
 
-        $('nav.fixed').midnight();
 
 
 // show current weather in the site footer

@@ -4,7 +4,18 @@ header.eat {
 	}
 
 
-
+div.source.food {
+	background: $brown;
+	color: $ltText;
+	@include link ($ltText, $highlight, $brown);
+	text-align: center;
+	p {
+		font-size: .85rem;
+	}
+	a {
+		font-size: .85rem;
+	}
+}
 
 section.eat {
 	background: $brown;

@@ -3,6 +3,7 @@
 
 	nav.siteMenu{
 		background-color: $frosted;
+		z-index: 9999;
 		ul.main {
 			display: flex;
 			flex-direction: column;

@@ -1,6 +1,22 @@
 header.home {
-		@include header ($dkBlue, '../images/surfer.jpg', 100);
+		@include header ($dkBlue, '../images/sunset_pier.jpg', 100);
+		background-position: center;
+
 	}
+
+
+div.source.sunset {
+	background: $ltBlue;
+	color: $dkText;
+	@include link ($dkText, $ltBrown, $ltBlue);
+	text-align: center;
+	p {
+		font-size: .85rem;
+	}
+	a {
+		font-size: .85rem;
+	}
+}	
 
 
 .intro {

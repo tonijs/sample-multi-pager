@@ -1,7 +1,21 @@
 header.when {
-		@include header (lighten($sky, 20%), '../images/ocean-beach-cliff-robbye.jpeg', 75);
-		background-position: center;
+		@include header (lighten($sky, 20%), '../images/WindanseaBeachShack.jpg', 75);
+		// background-position: center;
 	}
+
+
+div.source.windansea {
+	background: $ltBlue;
+	color: $dkText;
+	@include link ($dkText, $ltBrown, $ltBlue);
+	text-align: center;
+	p {
+		font-size: .85rem;
+	}
+	a {
+		font-size: .85rem;
+	}
+}	
 
 section.when {
 	background: $sky;

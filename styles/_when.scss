@@ -1,13 +1,13 @@
 header.when {
-		@include header (lighten($sky, 20%), '../images/WindanseaBeachShack.jpg', 75);
+		@include header (lighten($sky, 20%), '../images/WindanseaBeachShack.jpg', 80);
 		// background-position: center;
 	}
 
 
 div.source.windansea {
-	background: $ltBlue;
+	background: $sky;
 	color: $dkText;
-	@include link ($dkText, $ltBrown, $ltBlue);
+	@include link ($dkText, $ltBrown, $sky);
 	text-align: center;
 	p {
 		font-size: .85rem;

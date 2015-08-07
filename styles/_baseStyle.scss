@@ -29,12 +29,12 @@ html {
 		}
 
 	h3 {
-		font-size: 1.4rem;
+		font-size: 1.45rem;
 		font-family: $headingFont;
 	}
 
 	h4 {
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 		font-family: $headingFont;
 	}
 
@@ -53,6 +53,8 @@ html {
 		font-family: $accentFont;
 		font-size: .9rem;
 	}
+
+
 
 	p.accent {
 		font-family: $accentFont;
@@ -99,13 +101,15 @@ html {
 	bottom: 0px;
 	right: 0;
 	background: $frosted;
-	padding: .5%;
-	width: 25px;
-	height: 25px;
+	padding: 1%;
+	width: 35px;
+	height: 35px;
 	a.open-popup-link {
-		font-family: $headingFont;
-		font-weight: bold;
-		color: $dkBlue;
 		@include centerer;
+		i.fa {
+			color: $dkBlue;
+			font-size: 1.25rem;
+			padding: 2px;
+			}
 		}	
 	}

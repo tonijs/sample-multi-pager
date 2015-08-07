@@ -18,18 +18,18 @@ html {
 	}
 
 	h1 {
-		font-size: 3rem;
+		font-size: 2.75rem;
 		font-family: $titleFont;
 		letter-spacing: 1.5px;
 	}
 
 	h2 {
-		font-size: 2rem;
+		font-size: 1.75rem;
 		font-family: $headingFont;
 		}
 
 	h3 {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		font-family: $headingFont;
 	}
 
@@ -41,7 +41,7 @@ html {
 	p {
 		font-size: 1rem;
 		font-family: $baseFont;
-		letter-spacing: .5px;
+		letter-spacing: .75px;
 	}
 
 	img {
@@ -51,11 +51,13 @@ html {
 	a {
 		text-decoration: none;
 		font-family: $accentFont;
+		font-size: .9rem;
 	}
 
 	p.accent {
 		font-family: $accentFont;
 		font-size: 1.25rem;
+		font-weight: bold;
 	}
 
 	figcaption p {

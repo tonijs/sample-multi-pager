@@ -7,8 +7,8 @@
 
 // font variables
 
-$baseFont: 'Nobile', sans-serif;
-$headingFont: 'Fauna One', serif;
+$baseFont: 'Noto Sans', sans-serif;
+$headingFont: 'Noto Serif', serif;
 $titleFont: 'Pacifico', cursive;
 $accentFont: 'Josefin Sans', sans-serif;
 
@@ -17,7 +17,6 @@ $accentFont: 'Josefin Sans', sans-serif;
 $dkBlue: #223344;
 $ltBlue:  #8899aa;
 $frosted: transparentize(#cccccc, 0.3);
-$frostedMenu:  transparentize(#cccccc, 0.2);
 $ltText: #BEEB9F;
 $dkText: #260F08;
 $pine: #446655;
@@ -25,8 +24,8 @@ $brown: #251e16;
 $ltBrown: #eeddcc;
 $sand: #aa9988;
 $sky:  lighten(#5599dd, 20%);
-$highlight: #7DE0E5;
 $sign: #119999;
+$purple: #110022;
 
 
 
@@ -55,6 +54,7 @@ $sign: #119999;
 		background: $bc url($img);
 		background-size: cover;
 		height: $vh+vh;
+		z-index: 50;
 }
 
 

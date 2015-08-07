@@ -7,7 +7,7 @@ header.eat {
 div.source.food {
 	background: $brown;
 	color: $ltText;
-	@include link ($ltText, $highlight, $brown);
+	@include link ($ltText, $sky, $brown);
 	text-align: center;
 	p {
 		font-size: .85rem;
@@ -20,7 +20,7 @@ div.source.food {
 section.eat {
 	background: $brown;
 	color: $ltText;
-	@include link ($ltText, $highlight, $brown);
+	@include link ($ltText, $sky, $brown);
 }
 
 
@@ -29,7 +29,10 @@ ul.main {
 		background: $brown;
 		a.eats {
 			color: $ltText;
-			border-bottom: 5px solid $highlight;
+			border-bottom: 5px solid $sky;
+		}
+		a.eats:hover {
+			text-decoration: none;
 		}
 	}
 }

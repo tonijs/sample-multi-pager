@@ -1,14 +1,14 @@
 header.home {
-		@include header ($dkBlue, '../images/sunset_pier.jpg', 100);
+		@include header ($dkBlue, '../images/San_Diego_Reflecting_Pond.jpg', 100);
 		background-position: center;
 
 	}
 
 
-div.source.sunset {
-	background: $ltBlue;
-	color: $dkText;
-	@include link ($dkText, $ltBrown, $ltBlue);
+div.source.skyline {
+	background: $dkBlue;
+	color: $ltBrown;
+	@include link ($ltBrown, $ltBlue, $dkBlue);
 	text-align: center;
 	p {
 		font-size: .85rem;
@@ -20,8 +20,9 @@ div.source.sunset {
 
 
 .intro {
-	color: $ltText;
-	@include link ($ltText, $highlight, $dkBlue);
+	background: $dkBlue;
+	color: $ltBrown;
+	@include link ($ltBrown, $ltBlue, $dkBlue);
 
 }
 
@@ -34,8 +35,11 @@ ul.main {
 	li.nav.home {
 		background: $dkBlue;
 		a.home {
-			color: $ltText;
-			border-bottom: 5px solid $highlight;
+			color: $ltBrown;
+			border-bottom: 5px solid $ltBlue;
+		}
+		a.home:hover {
+			text-decoration: none;
 		}
 	}
 }

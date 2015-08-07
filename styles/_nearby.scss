@@ -44,5 +44,8 @@ ul.main {
 			color: #eee;
 			border-bottom: 5px solid $dkText;
 		}
+		a.nearby:hover {
+			text-decoration: none;
+		}
 	}
 }

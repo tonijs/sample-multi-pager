@@ -34,8 +34,11 @@ ul.main {
 	li.nav.stay {
 		background: $ltBlue;
 		a.stay {
-		color: $dkText;
-		border-bottom: 5px solid $ltBrown;
+			color: $dkText;
+			border-bottom: 5px solid $ltBrown;
+		}
+		a.stay:hover {
+			text-decoration: none;
 		}
 	}
 }

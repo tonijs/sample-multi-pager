@@ -8,7 +8,7 @@ header.sights {
 div.source.serra {
 	background: $pine;
 	color: $ltText;
-	@include link ($ltText, $highlight, $pine);
+	@include link ($ltText, $sky, $pine);
 	text-align: center;
 	p {
 		font-size: .85rem;
@@ -21,7 +21,7 @@ div.source.serra {
 section.sights {
 	background: $pine;
 	color: $ltText;
-	@include link ($ltText, $highlight, $pine);
+	@include link ($ltText, $sky, $pine);
 	}
 
 #tower, #zoo {
@@ -33,7 +33,7 @@ section.sights {
 
 
 .tips {
-	@include tips ($highlight, $pine);
+	@include tips ($sky, $pine);
 }
 
 ul.main {
@@ -41,7 +41,10 @@ ul.main {
 		background: $pine;
 		a.sights {
 			color: $ltText;
-			border-bottom: 5px solid $highlight;
+			border-bottom: 5px solid $sky;
+		}
+		a.sights:hover {
+			text-decoration: none;
 		}
 	}
 }

@@ -14,26 +14,24 @@
 				padding: 15% 5% 5%;
 				a {
 					color: $dkBlue;
-					font-family: $accentFont;
+					font-family: $headingFont;
 					font-size: 1.4rem;
 					letter-spacing: 1.5px;
-					font-weight: bold;	
+					font-weight: 600;	
 					display: block;	
 					transition: all .5s;
 				}
 				a:hover {
-					// background: linear-gradient(
-				 //      $frosted,
-				 //      $frosted 75%,
-				 //      $sign 75%,
-				 //      $sign 100%);				
-						letter-spacing: 2px;
+					letter-spacing: 2.5px;
+					text-decoration: underline;
+					font-weight: 600;
 				}
+
 			}
 		}
 	}
 
-	// identify wich content areas are pushed right when the menu slides open
+	// identify which content areas are pushed right when the menu slides open
 
 	div.push {
 		position: relative;
@@ -73,7 +71,7 @@
 	}
 
 	.midnightHeader.home a {
-		@include midNight($ltText, $dkBlue);
+		@include midNight($ltBrown, $dkBlue);
 	}
 
 	.midnightHeader.eats a {
@@ -94,6 +92,10 @@
 
 	.midnightHeader.where a {
 		@include midNight($dkText, $ltBlue);
+	}
+
+	.midnightHeader.contact a {
+		@include midNight($ltBrown, $purple);
 	}
 
 

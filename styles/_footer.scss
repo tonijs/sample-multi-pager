@@ -11,7 +11,7 @@
 		text-align: center;
 		li {
 			flex: 1 0 auto;
-			@include link ($dkText, $sky, $ltBrown);
+			@include link ($dkText, $sign, $ltBrown);
 			a {
 				font-size: 1.2rem;
 				font-weight: bold;
@@ -32,15 +32,14 @@
 
 
 
+// More Resources page
+
+
 header.resources {
-		@include header ($brown, '../images/geisel.jpg', 75);
+		@include header ($purple, '../images/geisel.jpg', 75);
 		background-position: center;
 	}
 
-header.maps {
-		@include header ($brown, '../images/fountain.jpg', 75);
-		background-position: bottom;
-	}
 
 
 
@@ -48,26 +47,39 @@ header.maps {
 
 
 
-div.source.contact {
-	background: $dkBlue;
-	color: $ltText;
-	@include link ($ltText, $highlight, $dkBlue);
-	text-align: center;
-	p {
-		font-size: .75rem;
-	}
-	a {
-		font-size: .75rem;
-	}
-}
+
+
 
 
 // Contact page
 
+section.contact {
+	background: $purple;
+	color: $ltBrown;
+	@include link ($ltBrown, $ltBlue, $purple);
+
+}
+
+
 header.contact {
-		@include header ($brown, '../images/San_Diego_Reflecting_Pond.jpg', 75);
+		@include header ($purple, '../images/sunset_pier.jpg', 75);
 		background-position: center;
 	}
+
+div.source.sunset {
+	background: $purple;
+	color: $ltBrown;
+	@include link ($ltBrown, $ltBlue, $purple);
+	text-align: center;
+	p {
+		font-size: .85rem;
+	}
+	a {
+		font-size: .85rem;
+	}
+}
+
+
 
 
 h3.comments {
@@ -91,12 +103,12 @@ input, textarea {
 	transition: all .5s;
 	margin-bottom: 1%;
 	font-family: $baseFont;
-	@include placeholder-color($color: $ltText)
+	@include placeholder-color($color: $ltBrown)
 }
 
 
 input[type=text], input[type=email], textarea {
-	background: $dkBlue;
+	background: $purple;
 	padding: 1%;
 	color:$ltText;
 		border: 1px solid $sky;
@@ -126,24 +138,5 @@ input[type=submit]:hover {
 	border: 1px solid $sky;
 }
 
-// input::-webkit-input-placeholder {
-// 	color: $dkText;
-// 	font-size: .8rem;	
-// }
-
-// input::-moz-placeholder {
-// 	color: $dkText;
-// 	font-size: .8rem;	
-// }
-
-// input:-moz-placeholder {   /* Older versions of Firefox */
-// 	color: $dkText;
-// 	font-size: .8rem;		
-// }
-
-// input:-ms-input-placeholder { 
-// 	color: $dkText;
-// 	font-size: .8rem;	
-// }
 
 

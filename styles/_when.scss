@@ -24,11 +24,14 @@ section.when {
 }
 
 ul.main {
-	li.when {
+	li.nav.go {
 		background:$sky;
-		a.when {
+		a.time {
 			color: $dkText;
-			border-bottom: 5px solid $ltBrown;
+			border-bottom: 5px solid $ltBrown;		
+		}
+		a.time:hover {
+			text-decoration: none;
 		}
 	}
 }

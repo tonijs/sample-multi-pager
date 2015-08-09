@@ -85,8 +85,6 @@ html {
 .intro {
 	background: $dkBlue;
 	color: #ddd;
-	@include link ($ltBrown, $sky, $dkBlue);
-
 }
 
 // base styling of image info buttons and popup windows. some details provided on individual page style sheets
@@ -99,7 +97,6 @@ html {
 		font-size: 12px;
 		background: $dkBlue;
 		color: #ddd;
-		@include link (#ddd, $sky, $dkBlue);
 		text-align: center;
 		p {
 			font-size: .85rem;
@@ -127,4 +124,7 @@ html {
 		}	
 	}
 
-
+ul.tabMenu h2, ul.tabMenu h3 {
+	margin: 0;
+	padding: 0 15px;
+}

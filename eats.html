@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="styles/magnific.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/jquery-ui.min.css">
+	<link rel="stylesheet" href="styles/jquery-ui.structure.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Pacifico|Noto+Sans:400,700|Noto+Serif:400,700' rel='stylesheet' type='text/css'>
 	<title>Sunny San Diego</title>
 </head>
@@ -54,28 +56,42 @@
 
 	<p class="accent">If your first answer isn't 'tacos', you haven't thought this through. Dining options in San Diego are pretty broad, but chances are there's no Mexican food anywhere near you that is even close.</p>
 
+<div class="tab">
 
+			<ul class="tabMenu">
+				<li><a href="#eatTab1"><h3>Mexican</h3></a></li>
+				<li><a href="#eatTab2"><h3>Fast Food</h3></a></li>
+				<li><a href="#eatTab3"><h3>Fancy</h3></a></li>
+				<li><a href="#eatTab4"><h3>Local Faves</h3></a></li>
+			</ul>
 
-	<h2 id="mexican">Mexican food</h2>
+	<div id="eatTab1">
+
 	<p>While you <em>could</em> eat at a Taco Bell or Del Taco while in San Diego, please don't.  You're better than that. We're better than that. For some seriously cheap, authentic mexican eats, look for any of the many many little fast-food walk up huts called "--bertos" or "--nitas" (Roberto's, Aliberto's, Juanita's, etc) and order something. Anything. Unless you have dietary restrictions, it doesn't really matter what everything is - but if you need to know, you can just ask the guy who takes your order.  My personal faves are carne asada or machaca for a burrito; probably carnitas or al pastor for a taco. Don't be expecting any of this 'gourmet' burrito bullshit, either - if it's good, it's just marinated grilled meat, salsa, maybe some beans and guacamole. All that other crap you get from Chipotle is just pointless tasteless filler.</p>
 
 	<p>Unless you're from a big city in Canada, you probably haven't had a fish taco and the idea may even scare you a little bit. That's okay! It scares everyone, at first. If you want to ease into it, find yourself a Rubio's and order a fish taco especial. If that doesn't convince you, stick with the carne asada - we won't judge. If you love it and want to try more, OR if you've been trained to think that all fish tacos are battered and deep fried beasts, head down to Ocean Beach, to South Beach Bar & Grill. Depending on the season, you can get grilled mahi, shrimp, octopus, or even langostina (slipper lobster) in a super fresh tortilla with loads of spicy salsa and crunchy cabbage. As a bonus, they usually have an amazing selection of local beers on tap, and if you get there before the crowds, you can sit at the bar with a view out towards the beach and the OB pier.</p>
+	</div>
 
-	<h2 id="fast">Fast Food	</h2>
+	<div id="eatTab2">
+	
 	<p>Fast food in San Diego is pretty much the same as most of the rest of the US, with a few exceptions. If you're visiting from Canada, though, there are a few you should try to check out if you're looking for a quick lunch or a snack.</p>
 
 	<h3>In n'Out</h3>
 	<h3>Rubio's</h3>
 	<h3>Jack in the Box</h3>
+	</div>
 
-	<h2 id="fancy">	Fancy eats	</h2>
+	<div id="eatTab3">
+
 
 	<p>I have to admit, I'm not big on fancy restaurants. So these suggestions are mostly culled from local newspapers and websites, coupled with things I've heard from friends and family.</p>
 
 	<p>Mister A's? </p>
 
+	</div>
 
-	<h2 id="local">Local Favorites</h2>
+	<div id="eatTab4">
+	
 	<p>When I say 'local favorites' I really mean MY favorites. Since I haven't lived there for years, there are undoubtedly new places that could top these- but these were some of my go-tos back in the day.</p>
 
 	<h3>Hash House</h3>
@@ -101,6 +117,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
 <script src="scripts/jquery.big-slide.min.js"></script>
 <script src="scripts/jquery.smoothState.min.js"></script>
 <script src="scripts/midnight.jquery.min.js"></script>

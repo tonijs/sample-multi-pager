@@ -2,7 +2,6 @@
 
 @import "setup";
 @import "juicy";
-// @import "magnific";
 
 
 // font variables
@@ -34,44 +33,12 @@ $purple: #110022;
 }
 
 
-
-// @mixin linkHover($tc, $bgc, $hlc) {
-// background: linear-gradient(
-// 				      $bgc,
-// 				      $bgc 75%,
-// 				      $hlc 75%,
-// 				      $hlc 100%);
-// 	color: $tc;
-// }
-
 // styling for all page headers
 
 @mixin header ($img, $vh) {
 		background: $dkBlue url($img);
 		background-size: cover;
 		height: $vh+vh;
-}
-
-
-// adds the thicker bottom border to all hovered links
-
-@mixin link ($txtc, $hlc, $bgc) {
-	a {
-		color: $txtc;
-		border-bottom: 5px solid $hlc;
-		font-size: 1.2rem;
-		font-weight: bold;
-		transition: all .5s;
-	}
-	a:hover {
-		background: linear-gradient(
-				      $bgc,
-				      $bgc 75%,
-				      $hlc 75%,
-				      $hlc 100%
-			);
-
-	}
 }
 
 
@@ -95,13 +62,9 @@ $purple: #110022;
 
 
 
-
-
-
 // default site-wide styles
 
 @import "baseStyle";
-
 
 
 // top nav and footer for all pages
@@ -109,11 +72,8 @@ $purple: #110022;
 @import "siteNav";
 
 
+// individual element styles
 
-
-// individual page styles
-
-@import "index";
 @import "headers";
 @import "images";
 @import "footer";

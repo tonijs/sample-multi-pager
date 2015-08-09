@@ -1,1 +1,592 @@
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap;word-wrap:break-word}q{quotes:\201C \201D \2018 \2019}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}fieldset{border:1px solid silver;margin:0 2px;padding:0.35em 0.625em 0.75em}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}body,figure{margin:0}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}*{box-sizing:border-box}html{font-size:16px;line-height:1.7;font-family:"Noto Sans",sans-serif;margin:0}body{background:#223344;margin:0}.wrapper{width:80%;max-width:1280px;margin:0 auto;padding:1%}h1{font-size:2.75rem;font-family:"Pacifico",cursive;letter-spacing:1.5px}h2{font-size:1.75rem;font-family:"Noto Serif",serif}h3{font-size:1.45rem;font-family:"Noto Serif",serif}h4{font-size:1.15rem;font-family:"Noto Serif",serif}p{font-size:1rem;font-family:"Noto Sans",sans-serif;letter-spacing:.75px}img{max-width:100%}a{text-decoration:none;font-family:"Josefin Sans",sans-serif;font-size:.9rem}p.accent{font-family:"Josefin Sans",sans-serif;font-size:1.25rem;font-weight:bold}figcaption p{font-size:.7rem;font-style:italic}figcaption p a.source{font-size:.75rem}header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;color:#223344;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative}header .title{background-color:rgba(204,204,204,0.7);width:50%;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);text-align:center}.intro{background:#223344;color:#ddd}.intro a{color:#eeddcc;border-bottom:5px solid #5599dd;font-size:1.2rem;font-weight:bold;-webkit-transition:all 0.5s;transition:all 0.5s}.intro a:hover{background:-webkit-linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%);background:linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%)}div.source{position:relative;padding:10px;width:auto;max-width:500px;margin:20px auto;font-size:12px;background:#223344;color:#ddd;text-align:center}div.source a{color:#ddd;border-bottom:5px solid #5599dd;font-size:1.2rem;font-weight:bold;-webkit-transition:all 0.5s;transition:all 0.5s}div.source a:hover{background:-webkit-linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%);background:linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%)}div.source p{font-size:.85rem}div.source a{font-size:.85rem}div.imgSource{position:absolute;bottom:0px;right:0;background:rgba(204,204,204,0.7);padding:1%;width:35px;height:35px}div.imgSource a.open-popup-link{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}div.imgSource a.open-popup-link i.fa{color:#223344;font-size:1.25rem;padding:2px}nav.siteMenu{background-color:rgba(204,204,204,0.7);z-index:9999}nav.siteMenu ul.main{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;list-style:none;padding:0}nav.siteMenu ul.main li.nav{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;padding:15% 5% 5%}nav.siteMenu ul.main li.nav a{color:#223344;font-family:"Noto Serif",serif;font-size:1.4rem;letter-spacing:1.5px;font-weight:600;display:block;-webkit-transition:all 0.5s;transition:all 0.5s}nav.siteMenu ul.main li.nav a:hover{letter-spacing:2.5px;text-decoration:underline;font-weight:600}ul.main li.nav.active{background:#223344}ul.main li.nav.active a.active{color:#ddd;border-bottom:5px solid #5599dd}ul.main li.nav.active a.active:hover{text-decoration:none}nav.fixed{position:fixed}nav.fixed a{font-size:1.75rem;display:block;width:50px;line-height:1;padding:10px;text-align:center}.midnightHeader{font-size:1.75rem;display:block;width:50px;line-height:1;padding:10px;text-align:center}.midnightHeader.default a{background:rgba(204,204,204,0.7);color:#223344}.midnightHeader.home a{background:#ddd;color:#223344}.midnightHeader.contact a{background:#eeddcc;color:#110022}header.home{background:#223344 url("../images/San_Diego_Reflecting_Pond.jpg");background-size:cover;height:100vh;background-position:center}.intro{background:#223344;color:#ddd}.intro a{color:#eeddcc;border-bottom:5px solid #5599dd;font-size:1.2rem;font-weight:bold;-webkit-transition:all 0.5s;transition:all 0.5s}.intro a:hover{background:-webkit-linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%);background:linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%)}header.eat{background:#223344 url("../images/gaslamp.jpg");background-size:cover;height:80vh;background-position:center}header.nearby{background:#223344 url("../images/pch.jpg");background-size:cover;height:80vh;background-position:center}header.sights{background:#223344 url("../images/Mission_San_Diego_de_Alcala.jpg");background-size:cover;height:80vh;background-position:center}header.stay{background:#223344 url("../images/hoteldel.jpg");background-size:cover;height:80vh;background-position:center}header.when{background:#223344 url("../images/WindanseaBeachShack.jpg");background-size:cover;height:80vh}header.home{background:#223344 url("../images/San_Diego_Reflecting_Pond.jpg");background-size:cover;height:100vh;background-position:center}header.resources{background:#223344 url("../images/geisel.jpg");background-size:cover;height:75vh;background-position:center}figure#tower a.image-link,figure#seaport a.image-link{background:#223344;border-bottom:none}#tower,#zoo,#grant{float:left;margin-right:3%;width:25%}#seaport{float:right;margin-left:3%;width:25%}footer{background:#eeddcc}ul.footer{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;list-style:none;padding:0;text-align:center}ul.footer li{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}ul.footer li a{color:#260F08;border-bottom:5px solid #110022;font-size:1.2rem;font-weight:bold;-webkit-transition:all 0.5s;transition:all 0.5s}ul.footer li a:hover{background:-webkit-linear-gradient(#eeddcc, #eeddcc 75%, #110022 75%, #110022 100%);background:linear-gradient(#eeddcc, #eeddcc 75%, #110022 75%, #110022 100%)}ul.footer li a{font-size:1.2rem;font-weight:bold}#weather p{font-size:1.2rem;font-weight:bold;font-family:"Josefin Sans",sans-serif;color:#260F08;text-align:center;margin:0}header.resources{background:#223344 url("../images/geisel.jpg");background-size:cover;height:75vh;background-position:center}section.contact{background:#110022;color:#eeddcc}section.contact a{color:#eeddcc;border-bottom:5px solid #8899aa;font-size:1.2rem;font-weight:bold;-webkit-transition:all 0.5s;transition:all 0.5s}section.contact a:hover{background:-webkit-linear-gradient(#110022, #110022 75%, #8899aa 75%, #8899aa 100%);background:linear-gradient(#110022, #110022 75%, #8899aa 75%, #8899aa 100%)}header.contact{background:#223344 url("../images/sunset_pier.jpg");background-size:cover;height:75vh;background-position:center}h3.comments{text-align:center}.contactForm{width:75%;margin:0 auto}input,textarea{outline:0;width:100%;margin:0 auto;-webkit-transition:all 0.5s;transition:all 0.5s;margin-bottom:1%;font-family:"Noto Sans",sans-serif}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#eeddcc}input::-moz-placeholder,textarea::-moz-placeholder{color:#eeddcc}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#eeddcc}input::placeholder,textarea::placeholder{color:#eeddcc}input[type=text],input[type=email],textarea{background:#110022;padding:1%;color:#ddd;border:1px solid #5599dd}input[type=text]:hover,input[type=email]:hover,textarea:hover{background:rgba(85,153,221,0.5)}input[type=text]:focus,input[type=email]:focus,textarea:focus{background:#5599dd;color:#260F08}input[type=submit]{font-size:1.5rem;font-family:"Pacifico",cursive;background:rgba(85,153,221,0.5);letter-spacing:1.5px;border:1px solid rgba(85,153,221,0.3)}input[type=submit]:hover{background:#5599dd;border:1px solid #5599dd}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+}
+
+body {
+  background: #223344;
+  margin: 0;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-family: "Noto Serif", serif;
+}
+
+h3 {
+  font-size: 1.45rem;
+  font-family: "Noto Serif", serif;
+}
+
+h4 {
+  font-size: 1.15rem;
+  font-family: "Noto Serif", serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: .75px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: .9rem;
+}
+
+p.accent {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+figcaption p {
+  font-size: .7rem;
+  font-style: italic;
+}
+
+figcaption p a.source {
+  font-size: .75rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #223344;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+header .title {
+  background-color: rgba(204, 204, 204, 0.7);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.intro {
+  background: #223344;
+  color: #ddd;
+}
+
+div.source {
+  position: relative;
+  padding: 10px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  font-size: 12px;
+  background: #223344;
+  color: #ddd;
+  text-align: center;
+}
+
+div.source p {
+  font-size: .85rem;
+}
+
+div.source a {
+  font-size: .85rem;
+}
+
+div.imgSource {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  background: rgba(204, 204, 204, 0.7);
+  padding: 1%;
+  width: 35px;
+  height: 35px;
+}
+
+div.imgSource a.open-popup-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div.imgSource a.open-popup-link i.fa {
+  color: #223344;
+  font-size: 1.25rem;
+  padding: 2px;
+}
+
+ul.tabMenu h2, ul.tabMenu h3 {
+  margin: 0;
+  padding: 0 15px;
+}
+
+nav.siteMenu {
+  background-color: rgba(204, 204, 204, 0.7);
+  z-index: 9999;
+}
+
+nav.siteMenu ul.main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+nav.siteMenu ul.main li.nav {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 15% 5% 5%;
+}
+
+nav.siteMenu ul.main li.nav a {
+  color: #223344;
+  font-family: "Noto Serif", serif;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  display: block;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+nav.siteMenu ul.main li.nav a:hover {
+  letter-spacing: 2.5px;
+  border-bottom: 5px solid #223344;
+  font-weight: 600;
+}
+
+ul.main li.nav.active {
+  background: #223344;
+}
+
+ul.main li.nav.active a.active {
+  color: #ddd;
+  border-bottom: 5px solid #5599dd;
+}
+
+ul.main li.nav.active a.active:hover {
+  text-decoration: none;
+}
+
+nav.fixed {
+  position: fixed;
+}
+
+nav.fixed a {
+  font-size: 1.75rem;
+  display: block;
+  width: 50px;
+  line-height: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.midnightHeader {
+  font-size: 1.75rem;
+  display: block;
+  width: 50px;
+  line-height: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.midnightHeader.default a {
+  background: rgba(204, 204, 204, 0.7);
+  color: #223344;
+}
+
+.midnightHeader.home a {
+  background: #ddd;
+  color: #223344;
+}
+
+.midnightHeader.contact a {
+  background: #eeddcc;
+  color: #110022;
+}
+
+header.eat {
+  background: #223344 url("../images/gaslamp.jpg");
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
+}
+
+header.nearby {
+  background: #223344 url("../images/pch.jpg");
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
+}
+
+header.sights {
+  background: #223344 url("../images/Mission_San_Diego_de_Alcala.jpg");
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
+}
+
+header.stay {
+  background: #223344 url("../images/hoteldel.jpg");
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
+}
+
+header.when {
+  background: #223344 url("../images/WindanseaBeachShack.jpg");
+  background-size: cover;
+  height: 80vh;
+}
+
+header.home {
+  background: #223344 url("../images/San_Diego_Reflecting_Pond.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+header.resources {
+  background: #223344 url("../images/geisel.jpg");
+  background-size: cover;
+  height: 75vh;
+  background-position: center;
+}
+
+figure#tower a.image-link, figure#seaport a.image-link {
+  background: #223344;
+  border-bottom: none;
+}
+
+#tower, #zoo, #grant {
+  float: left;
+  margin-right: 3%;
+  width: 25%;
+}
+
+#seaport {
+  float: right;
+  margin-left: 3%;
+  width: 25%;
+}
+
+footer {
+  background: #eeddcc;
+}
+
+ul.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul.footer li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+ul.footer li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#weather p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  color: #260F08;
+  text-align: center;
+  margin: 0;
+}
+
+header.resources {
+  background: #223344 url("../images/geisel.jpg");
+  background-size: cover;
+  height: 75vh;
+  background-position: center;
+}
+
+section.contact {
+  background: #110022;
+  color: #eeddcc;
+}
+
+header.contact {
+  background: #223344 url("../images/sunset_pier.jpg");
+  background-size: cover;
+  height: 75vh;
+  background-position: center;
+}
+
+h3.comments {
+  text-align: center;
+}
+
+.contactForm {
+  width: 75%;
+  margin: 0 auto;
+}
+
+input, textarea {
+  outline: 0;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  margin-bottom: 1%;
+  font-family: "Noto Sans", sans-serif;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #eeddcc;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #eeddcc;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #eeddcc;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #eeddcc;
+}
+
+input[type=text], input[type=email], textarea {
+  background: #110022;
+  padding: 1%;
+  color: #ddd;
+  border: 1px solid #5599dd;
+}
+
+input[type=text]:hover, input[type=email]:hover, textarea:hover {
+  background: rgba(85, 153, 221, 0.5);
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  background: #5599dd;
+  color: #260F08;
+}
+
+input[type=submit] {
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+  background: rgba(85, 153, 221, 0.5);
+  letter-spacing: 1.5px;
+  border: 1px solid rgba(85, 153, 221, 0.3);
+}
+
+input[type=submit]:hover {
+  background: #5599dd;
+  border: 1px solid #5599dd;
+}

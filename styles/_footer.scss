@@ -11,7 +11,6 @@
 		text-align: center;
 		li {
 			flex: 1 0 auto;
-			@include link ($dkText, $purple, $ltBrown);
 			a {
 				font-size: 1.2rem;
 				font-weight: bold;
@@ -44,7 +43,6 @@ header.resources {
 section.contact {
 	background: $purple;
 	color: $ltBrown;
-	@include link ($ltBrown, $ltBlue, $purple);
 }
 
 header.contact {

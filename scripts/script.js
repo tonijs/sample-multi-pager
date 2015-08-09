@@ -4,6 +4,7 @@
 
         $('nav.fixed').midnight();
 
+
 // slide out menu, including pushing the content over		
         $('.menu-link').bigSlide({
         	side:'right',
@@ -11,11 +12,10 @@
         	speed: 500
         });
 
+
 // makes site animations less jerky
 
         $('#menu').smoothState();
-
-
 
 
 // show current weather in the site footer
@@ -34,6 +34,7 @@
 		    }
 		  });
 
+
 // lightbox / dialog plugin, for image sources and displaying full-sized versions of smaller images
 
 		  $('.open-popup-link').magnificPopup({
@@ -44,4 +45,10 @@
 		  $('.image-link').magnificPopup({
 		  	type:'image'
 		  });
+
+
+// tabbed navigation for child pages
+
+		$( ".tab" ).tabs();
+
     });

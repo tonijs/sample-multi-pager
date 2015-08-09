@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="styles/magnific.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/jquery-ui.min.css">
+	<link rel="stylesheet" href="styles/jquery-ui.structure.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Pacifico|Noto+Sans:400,700|Noto+Serif:400,700' rel='stylesheet' type='text/css'>
 	<title>Sunny San Diego</title>
 </head>
@@ -54,9 +56,16 @@
 	<div class="wrapper">
 		
 		<p class="accent">You probably have a limited amount of time and a certain set of priorities, so let's sort out the best things to see and do while you're here.</p>
+		<div class="tab">
 
+			<ul class="tabMenu">
+				<li><a href="#seeTab1"><h3>Typically Touristy</h3></a></li>
+				<li><a href="#seeTab2"><h3>Sports and outdoors</h3></a></li>
+				<li><a href="#seeTab3"><h3>Culture</h3></a></li>
+				<li><a href="#seeTab4"><h3>Family Friendly</h3></a></li>
+			</ul>
 
-		<h3>Typically Touristy</h3>
+		<div id="seeTab1">
 		<p>There are things in every city that locals consider a must-see for newcomers. If you're the type of traveler who wants to experience the most famous sights of a city, start here!</p>
 		
 		<p><strong>Beaches</strong> : San Diego's beaches are probably the number one draw for visitors, with good reason. With miles and miles of coastline, we have a beach for everyone. The North County beaches tend to be a bit cleaner, mostly visited by locals and surfers. Mission and Pacific Beaches are the 'party' beaches, where the dude-bros, frat boys, jocks and college kids hang out. They're connected by a long boardwalk, great for people watching. South Mission beach also has a ton of publicly-maintained volleyball courts, if that's your thing. La Jolla is probably the most manicured and well-behaved beach zone (not surprisingly; the village of La Jolla is one of the most posh neighborhoods in the county.) </p>
@@ -73,10 +82,10 @@
 		<p><strong>Old Town San Diego</strong> : this is San Diego's historic district, even though it's been extensively rebuilt and commercialized. You can still see quite a few historic buildings from the pre-USA era, and eat some decent mexican food while drinking a margarita the size of your head. This is also a great place to pick up some pretty unique souvenirs.  If you're lucky, you'll visit on a day when the <a href="http://www.sandiegoreader.com/weblogs/feast/2013/jul/05/the-tortilla-ladies-its-fresh-and-hot-on-san-diego/#">tortilla ladies of Cafe Coyote</a> are open for business. If, like many North Americans, you think you like flour tortillas better than corn because corn tortillas are dry and bland, <a href="http://www.cafecoyoteoldtown.com/cafe-coyote-tortilla-ladies/">these ladies will change your mind</a>.</p>
 
 		<p><strong>Casinos</strong> : I hesitate to mention these, because I have complicated feelings about them; but like Sea World, they are a thing that visitors often like, so here goes. There are many, many casinos in San Diego County. Because they are usually out east, pretty far from downtown, many of them also have attached hotels (some with outlet malls, some with golf courses).  If gambling is your thing, San Diego definitely has you covered.</p>
+		</div>
 
-
-		<h3>Sports and outdoor stuff</h3>
-
+	
+		<div id="seeTab2">
 		<p>San Diegans LOVE their sports. As participants or spectators or both, just about everyone has a favorite or three.</p> 
 
 		<p><strong>Surfing</strong> : Let's start with the obvious. You can watch surfers at just about any beach; most radio stations include surf reports along with weather and traffic in the mornings and afternoons.  There's even a <a href="http://surfmuseum.org/">surf museum</a>. If you want to learn to surf, there are probably hundreds of local surf schools. Find a local surf shop and ask if they have suggestions. </p>
@@ -90,8 +99,10 @@
 		<p><strong>Golf</strong> : I almost forgot about golf! Lots of world-class golf courses in San Diego, and they're open year-round. Torrey Pines and La Costa are probably the most famous - if you want to get a tee time on one of them, you might want to try to reserve well in advance of your visit, depending on the season - but there is almost guaranteed to be at least <a href="http://www.golfsandiego.com/san-diego-golf-courses.asp">one decent course</a> pretty close to wherever you end up staying. I'm not a golfer, at all, but <a href="http://www.golfdigest.com/golf-courses/golf-travel/buddies/2010-10/away-game-san-diego">this guy seems to have opinions</a> so I'll defer to him.</p>
 
 		<p><strong>Baseball, football, basketball</strong> : San Diego has two pro teams, both historically under-achieving. In summer, you can catch the Padres down near the water at Petco Park; in the fall, the Chargers <a href="link to an article about potential move">might</a> be playing in Mission Valley, at Qualcomm Stadium. And while there are three large universities in town, only one of them - SDSU - has an NCAA sports program. I hear their basketball team is usually pretty good, although I don't really care about college sports, personally. </p>
+		</div>
 
-		<div class="clearfix">
+
+		<div id="seeTab3" class="clearfix">
 		<h3>Cultural Highlights</h3>	
 			
 		<figure id="tower">
@@ -115,7 +126,7 @@
 		</div>
 
 
-		<div class="clearfix">
+		<div id="seeTab4" class="clearfix">
 		<h3>Family Friendly</h3>	
 
 		<a class="image-link" href="images/zoo-entrance.jpg"><img id="zoo" src="images/zoo-entrance.jpg" alt=""></a>
@@ -131,6 +142,7 @@
 		<h3>Local Faves</h3>
 		<p>North Park & Hillcrest, PB/OB</p>
 		<p>Coronado Island - drive across the bridge, or take the ferry from downtown. If you want to check out the historic Hotel Del Coronado, you're probably better off driving - it's a bit of a walk from the ferry docks, or a pretty quick cab ride. Either way, it's an absolutely beautiful place. Lots of great trees, good food, and the hotel has an amazing beach just outside the doors. In the winter they'll sometimes set up an outdoor skating rink (despite the fact that it's rarely cold enough!) right on the beach. </p>
+	</div>
 	</div>
 </section>
 
@@ -149,6 +161,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
 <script src="scripts/jquery.big-slide.min.js"></script>
 <script src="scripts/jquery.smoothState.min.js"></script>
 <script src="scripts/midnight.jquery.min.js"></script>

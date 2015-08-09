@@ -1,0 +1,21 @@
+
+
+figure#tower a.image-link, figure#seaport a.image-link {
+	background: $dkBlue;
+	border-bottom: none;
+}
+
+#tower, #zoo, #grant {
+	float: left;
+	margin-right: 3%;
+	width: 25%;
+}
+
+#seaport {
+	float: right;
+	margin-left: 3%;
+	width: 25%;
+}
+
+
+

@@ -17,13 +17,9 @@ $accentFont: 'Josefin Sans', sans-serif;
 $dkBlue: #223344;
 $ltBlue:  #8899aa;
 $frosted: transparentize(#cccccc, 0.3);
-$ltText: #BEEB9F;
 $dkText: #260F08;
-$pine: #446655;
-$brown: #251e16;
 $ltBrown: #eeddcc;
-$sand: #aa9988;
-$sky:  lighten(#5599dd, 20%);
+$sky:  #5599dd;
 $sign: #119999;
 $purple: #110022;
 
@@ -50,11 +46,10 @@ $purple: #110022;
 
 // styling for all page headers
 
-@mixin header ($bc, $img, $vh) {
-		background: $bc url($img);
+@mixin header ($img, $vh) {
+		background: $dkBlue url($img);
 		background-size: cover;
 		height: $vh+vh;
-		z-index: 50;
 }
 
 
@@ -119,12 +114,10 @@ $purple: #110022;
 // individual page styles
 
 @import "index";
-@import "when";
-@import "see";
-@import "eat";
-@import "stay";
-@import "nearby";
+@import "headers";
+@import "images";
 @import "footer";
+
 
 
 

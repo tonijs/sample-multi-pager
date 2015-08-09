@@ -11,12 +11,11 @@
 		text-align: center;
 		li {
 			flex: 1 0 auto;
-			@include link ($dkText, $sign, $ltBrown);
+			@include link ($dkText, $purple, $ltBrown);
 			a {
 				font-size: 1.2rem;
 				font-weight: bold;
-			}
-			
+			}			
 		}
 	}
 
@@ -31,23 +30,12 @@
 }
 
 
-
 // More Resources page
 
-
 header.resources {
-		@include header ($purple, '../images/geisel.jpg', 75);
-		background-position: center;
-	}
-
-
-
-
-
-
-
-
-
+	@include header ('../images/geisel.jpg', 75);
+	background-position: center;
+}
 
 
 
@@ -57,36 +45,16 @@ section.contact {
 	background: $purple;
 	color: $ltBrown;
 	@include link ($ltBrown, $ltBlue, $purple);
-
 }
-
 
 header.contact {
-		@include header ($purple, '../images/sunset_pier.jpg', 75);
+		@include header ('../images/sunset_pier.jpg', 75);
 		background-position: center;
-	}
-
-div.source.sunset {
-	background: $purple;
-	color: $ltBrown;
-	@include link ($ltBrown, $ltBlue, $purple);
-	text-align: center;
-	p {
-		font-size: .85rem;
-	}
-	a {
-		font-size: .85rem;
-	}
 }
-
-
-
 
 h3.comments {
 	text-align: center;
 }
-
-
 
 
 // form on the contact page
@@ -110,20 +78,19 @@ input, textarea {
 input[type=text], input[type=email], textarea {
 	background: $purple;
 	padding: 1%;
-	color:$ltText;
-		border: 1px solid $sky;
+	color:#ddd;
+	border: 1px solid $sky;
 }
 
 
 input[type=text]:hover, input[type=email]:hover, textarea:hover {
 	background: transparentize($sky, 0.5);
-	}
+}
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
 	background: $sky;
 	color: $dkText;
-	}
-
+}
 
 input[type=submit] {
 	font-size: 1.5rem;

@@ -54,8 +54,6 @@ html {
 		font-size: .9rem;
 	}
 
-
-
 	p.accent {
 		font-family: $accentFont;
 		font-size: 1.25rem;
@@ -72,44 +70,61 @@ html {
 
 // base styling for page headers. some details provided on individual page style sheets via the header mixin
 	header {		
-			display: flex;
-			color: $dkBlue;
-			flex-direction: column;
-			position: relative;
-			.title {
-				background-color: $frosted;
-				width: 50%;
-				@include centerer;
-				text-align: center;
-			}	
+		display: flex;
+		color: $dkBlue;
+		flex-direction: column;
+		position: relative;
+		.title {
+			background-color: $frosted;
+			width: 50%;
+			@include centerer;
+			text-align: center;
+		}	
 	}	
 
+.intro {
+	background: $dkBlue;
+	color: #ddd;
+	@include link ($ltBrown, $sky, $dkBlue);
 
+}
 
 // base styling of image info buttons and popup windows. some details provided on individual page style sheets
 	div.source {
-	  position: relative;
-	  padding: 10px;
-	  width: auto;
-	  max-width: 500px;
-	  margin: 20px auto;
-	  font-size: 12px;
+		position: relative;
+		padding: 10px;
+		width: auto;
+		max-width: 500px;
+		margin: 20px auto;
+		font-size: 12px;
+		background: $dkBlue;
+		color: #ddd;
+		@include link (#ddd, $sky, $dkBlue);
+		text-align: center;
+		p {
+			font-size: .85rem;
+		}
+		a {
+			font-size: .85rem;
+		}
 	}
 
 	div.imgSource {
-	position: absolute;
-	bottom: 0px;
-	right: 0;
-	background: $frosted;
-	padding: 1%;
-	width: 35px;
-	height: 35px;
-	a.open-popup-link {
-		@include centerer;
-		i.fa {
-			color: $dkBlue;
-			font-size: 1.25rem;
-			padding: 2px;
+		position: absolute;
+		bottom: 0px;
+		right: 0;
+		background: $frosted;
+		padding: 1%;
+		width: 35px;
+		height: 35px;
+		a.open-popup-link {
+			@include centerer;
+			i.fa {
+				color: $dkBlue;
+				font-size: 1.25rem;
+				padding: 2px;
 			}
 		}	
 	}
+
+

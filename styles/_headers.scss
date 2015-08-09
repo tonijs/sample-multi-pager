@@ -1,0 +1,34 @@
+header.eat {
+	@include header ('../images/gaslamp.jpg', 80);
+	background-position: center;
+	}
+
+header.nearby {
+	@include header ('../images/pch.jpg', 80);
+	background-position: center;
+	}
+
+header.sights {
+	@include header ('../images/Mission_San_Diego_de_Alcala.jpg', 80);
+	background-position: center;
+	}
+
+header.stay {
+	@include header ('../images/hoteldel.jpg', 80);
+	background-position: center;
+	}
+
+header.when {
+	@include header ('../images/WindanseaBeachShack.jpg', 80);
+	// background-position: center;
+	}
+
+header.home {
+	@include header ('../images/San_Diego_Reflecting_Pond.jpg', 100);
+	background-position: center;
+	}
+
+header.resources {
+	@include header ('../images/geisel.jpg', 75);
+	background-position: center;
+	}

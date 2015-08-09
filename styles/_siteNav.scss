@@ -31,11 +31,22 @@
 		}
 	}
 
-	// identify which content areas are pushed right when the menu slides open
 
-	div.push {
-		position: relative;
+  	// to distinguish active page on menu
+
+	ul.main {
+		li.nav.active {
+			background: $dkBlue;
+			a.active {
+				color: #ddd;
+				border-bottom: 5px solid $sky;
+			}
+			a.active:hover {
+				text-decoration: none;
+			}
+		}
 	}
+
 
 	// styling for the hamburger menu link
 
@@ -53,7 +64,6 @@
 	}
 
 
-
 	// special classes for use with midnight.js, for changing the hamburger menu link as the page is scrolled
 
 	.midnightHeader {
@@ -65,33 +75,12 @@
 		text-align: center;
 	}
 
-
 	.midnightHeader.default a {
 		@include midNight($frosted, $dkBlue);
 	}
 
 	.midnightHeader.home a {
-		@include midNight($ltBrown, $dkBlue);
-	}
-
-	.midnightHeader.eats a {
-		@include midNight($ltText, $brown);
-	}
-
-	.midnightHeader.when a {
-		@include midNight($dkText, $sky);
-	}
-
-	.midnightHeader.see a {
-		@include midNight($ltText, $pine);
-	}
-
-	.midnightHeader.near a {
-		@include midNight(#eee, $sign);
-	}
-
-	.midnightHeader.where a {
-		@include midNight($dkText, $ltBlue);
+		@include midNight(#ddd, $dkBlue);
 	}
 
 	.midnightHeader.contact a {

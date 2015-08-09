@@ -1,4 +1,8 @@
 	$(document).ready(function() {
+
+// responsive container for videos
+
+		 $("div.video").fitVids();
 		
 // changes the style of the hamburger menu link as the page is scrolled
 

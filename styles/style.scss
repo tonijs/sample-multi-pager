@@ -32,6 +32,25 @@ $purple: #110022;
 	font-size: $fz+px
 }
 
+// adds the thicker bottom border to all hovered links
+
+@mixin link ($txtc, $hlc, $bgc) {
+	a {
+		color: $txtc;
+		border-bottom: 5px solid $hlc;	
+		font-weight: bold;
+		transition: all .5s;
+	}
+	a:hover {
+		background: linear-gradient(
+				      $bgc,
+				      $bgc 75%,
+				      $hlc 75%,
+				      $hlc 100%
+		);
+	}
+}
+
 
 // styling for all page headers
 
@@ -77,7 +96,7 @@ $purple: #110022;
 @import "headers";
 @import "images";
 @import "footer";
-
+@import "media";
 
 
 

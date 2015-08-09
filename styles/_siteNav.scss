@@ -8,10 +8,10 @@
 			display: flex;
 			flex-direction: column;
 			list-style: none;
-			padding: 0;
+			padding: 0;			
 			li.nav {
 				flex: 1 0 auto;
-				padding: 15% 5% 5%;
+				padding: 15% 7% 5%;				
 				a {
 					color: $dkBlue;
 					font-family: $headingFont;
@@ -20,11 +20,12 @@
 					font-weight: 600;	
 					display: block;	
 					transition: all .5s;
+					border-bottom: 5px solid transparentize(#cccccc, .99);
 				}
 				a:hover {
 					letter-spacing: 2.5px;
 					border-bottom: 5px solid $dkBlue;
-					font-weight: 600;
+					font-weight: 600;					
 				}
 
 			}

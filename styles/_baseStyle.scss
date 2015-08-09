@@ -50,13 +50,14 @@ html {
 
 	a {
 		text-decoration: none;
-		font-family: $accentFont;
-		font-size: .9rem;
+		// font-family: $accentFont;
+		outline: none;
+		// font-size: .8rem;
 	}
 
 	p.accent {
 		font-family: $accentFont;
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 		font-weight: bold;
 	}
 
@@ -85,7 +86,18 @@ html {
 .intro {
 	background: $dkBlue;
 	color: #ddd;
+	.wrapper {
+		p {
+			@include link(#ddd, $sky, $dkBlue);
+			
+		}
+	}
 }
+
+// .video iframe {
+// 	margin: 0 auto;
+// }
+
 
 // base styling of image info buttons and popup windows. some details provided on individual page style sheets
 	div.source {
@@ -100,6 +112,7 @@ html {
 		text-align: center;
 		p {
 			font-size: .85rem;
+			@include link(#ddd, $sky, $dkBlue);
 		}
 		a {
 			font-size: .85rem;

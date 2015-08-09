@@ -214,13 +214,12 @@ img {
 
 a {
   text-decoration: none;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: .9rem;
+  outline: none;
 }
 
 p.accent {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: bold;
 }
 
@@ -264,6 +263,19 @@ header .title {
   color: #ddd;
 }
 
+.intro .wrapper p a {
+  color: #ddd;
+  border-bottom: 5px solid #5599dd;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+.intro .wrapper p a:hover {
+  background: -webkit-linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%);
+  background: linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%);
+}
+
 div.source {
   position: relative;
   padding: 10px;
@@ -278,6 +290,19 @@ div.source {
 
 div.source p {
   font-size: .85rem;
+}
+
+div.source p a {
+  color: #ddd;
+  border-bottom: 5px solid #5599dd;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+div.source p a:hover {
+  background: -webkit-linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%);
+  background: linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%);
 }
 
 div.source a {
@@ -338,7 +363,7 @@ nav.siteMenu ul.main li.nav {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  padding: 15% 5% 5%;
+  padding: 15% 7% 5%;
 }
 
 nav.siteMenu ul.main li.nav a {
@@ -350,6 +375,7 @@ nav.siteMenu ul.main li.nav a {
   display: block;
   -webkit-transition: all 0.5s;
           transition: all 0.5s;
+  border-bottom: 5px solid rgba(204, 204, 204, 0.01);
 }
 
 nav.siteMenu ul.main li.nav a:hover {
@@ -495,6 +521,19 @@ ul.footer li {
 }
 
 ul.footer li a {
+  color: #260F08;
+  border-bottom: 5px solid #5599dd;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+ul.footer li a:hover {
+  background: -webkit-linear-gradient(#eeddcc, #eeddcc 75%, #5599dd 75%, #5599dd 100%);
+  background: linear-gradient(#eeddcc, #eeddcc 75%, #5599dd 75%, #5599dd 100%);
+}
+
+ul.footer li a {
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -589,4 +628,28 @@ input[type=submit] {
 input[type=submit]:hover {
   background: #5599dd;
   border: 1px solid #5599dd;
+}
+
+@media (max-width: 1080px) {
+  div.wrapper {
+    width: 90%;
+  }
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 925px) {
+  body {
+    font-size: 12px;
+  }
 }

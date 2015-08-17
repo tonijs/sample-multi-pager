@@ -90,3 +90,151 @@
 
 
 
+
+// Responsive Tabs CSS from https://github.com/jellekralt/Responsive-Tabs/blob/master/css/responsive-tabs.css
+
+.r-tabs .r-tabs-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+
+.r-tabs .r-tabs-panel {
+    padding: 15px;
+    display: none;
+}
+
+.r-tabs .r-tabs-accordion-title {
+    display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block;
+}
+
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 768px) {
+    .r-tabs .r-tabs-nav {
+        display: none;
+    }
+
+    .r-tabs .r-tabs-accordion-title {
+        display: block;
+    }
+}
+
+
+
+// Tab & Accordion style template from https://github.com/jellekralt/Responsive-Tabs/blob/master/css/style.css; updated with colors & styles for this site
+
+/* Tabs container */
+.r-tabs {
+	position: relative;
+	background-color: $ltBlue;
+	border: 1px solid $ltBlue;
+
+}
+
+/* Tab element */
+.r-tabs .r-tabs-nav .r-tabs-tab {
+	position: relative;
+	background-color: $ltBlue;
+}
+
+/* Tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+	display: inline-block;
+	padding: 5px 15px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #555;
+}
+
+/* Disabled tab */
+.r-tabs .r-tabs-nav .r-tabs-state-disabled {
+	opacity: 0.5;
+}
+
+/* Active state tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+	color: #ccc;
+	text-shadow: none;
+	background-color: $dkBlue;
+}
+
+/* Tab panel */
+.r-tabs .r-tabs-panel {
+	background-color: $dkBlue;
+
+}
+
+/* Accordion anchor */
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+	display: block;
+	padding:10px;
+	background-color: $ltBlue;
+	color: #555;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+/* Active accordion anchor */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+	background-color: $dkBlue;
+	color: #ccc;
+	text-shadow: none;
+	border-bottom: 1px solid $ltBlue;
+}
+
+/* Disabled accordion button */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+	opacity: 0.5;
+}
+
+// /* Buttons */
+// button {
+// 	display:inline-block;
+// 	margin-top: 10px;
+// 	margin-right: 10px;
+// 	padding: 10px 20px;
+// 	line-height: 100%;
+// 	color: #fff;
+// 	font-size: 14px;
+// 	text-align: center;
+// 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+// 	vertical-align: middle;
+// 	font-weight: bold;	
+// 	border: 0;
+// 	-webkit-border-radius: 3px;
+// 	-moz-border-radius: 3px;
+// 	border-radius: 3px;
+// 	background-color: #00c5ad;
+// 	box-shadow: 0px 3px 0px 0px #00ab94;	
+// 	cursor: pointer;
+// }
+
+// /* Info bar */
+// .info {
+// 	display:inline-block;
+// 	margin-top: 10px;
+// 	margin-right: 10px;
+// 	padding: 10px 20px;
+// 	width: 300px;
+// 	line-height: 100%;
+// 	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+// 	font-size: 14px;
+// 	color: #00c5ad;
+// 	border: 2px solid #00ab94;
+// 	-webkit-border-radius: 3px;
+// 	-moz-border-radius: 3px;
+// 	border-radius: 3px;
+// 	background-color: #fff;
+// 	cursor: pointer;
+// } 

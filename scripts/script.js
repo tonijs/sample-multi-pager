@@ -51,8 +51,11 @@
 		  });
 
 
-// tabbed navigation for child pages
+// responsive tabs, switch to accordion at breakpoint 
 
-		$( ".tab" ).tabs();
+
+		$('.responsiveTabs').responsiveTabs({
+		    startCollapsed: 'accordion'
+		});
 
     });

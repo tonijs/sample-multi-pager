@@ -25,4 +25,26 @@
 	body {
 		font-size: 12px;
 	}
-}
+
+	ul.tabMenu li a h3  {
+		font-size: 1rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	nav.siteMenu {
+		background: #ccc;
+		li.nav {
+		padding: 10% 7% 5%;				
+			a {
+				font-size: 1.25rem;
+				letter-spacing: 1px;
+				}
+			a:hover {
+				letter-spacing: 2px;				
+				}
+			}
+		}
+	}

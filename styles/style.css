@@ -334,11 +334,6 @@ div.imgSource a.open-popup-link i.fa {
   padding: 2px;
 }
 
-ul.tabMenu h2, ul.tabMenu h3 {
-  margin: 0;
-  padding: 0 15px;
-}
-
 nav.siteMenu {
   background-color: rgba(204, 204, 204, 0.7);
   z-index: 9999;
@@ -432,6 +427,104 @@ nav.fixed a {
 .midnightHeader.contact a {
   background: #eeddcc;
   color: #110022;
+}
+
+.r-tabs .r-tabs-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.r-tabs .r-tabs-tab {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+}
+
+.r-tabs .r-tabs-panel {
+  padding: 15px;
+  display: none;
+}
+
+.r-tabs .r-tabs-accordion-title {
+  display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+  display: block;
+}
+
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 768px) {
+  .r-tabs .r-tabs-nav {
+    display: none;
+  }
+  .r-tabs .r-tabs-accordion-title {
+    display: block;
+  }
+}
+
+/* Tabs container */
+.r-tabs {
+  position: relative;
+  background-color: #8899aa;
+  border: 1px solid #8899aa;
+}
+
+/* Tab element */
+.r-tabs .r-tabs-nav .r-tabs-tab {
+  position: relative;
+  background-color: #8899aa;
+}
+
+/* Tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+  display: inline-block;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Disabled tab */
+.r-tabs .r-tabs-nav .r-tabs-state-disabled {
+  opacity: 0.5;
+}
+
+/* Active state tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+  color: #ccc;
+  text-shadow: none;
+  background-color: #223344;
+}
+
+/* Tab panel */
+.r-tabs .r-tabs-panel {
+  background-color: #223344;
+}
+
+/* Accordion anchor */
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+  display: block;
+  padding: 10px;
+  background-color: #8899aa;
+  color: #555;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Active accordion anchor */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+  background-color: #223344;
+  color: #ccc;
+  text-shadow: none;
+  border-bottom: 1px solid #8899aa;
+}
+
+/* Disabled accordion button */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+  opacity: 0.5;
 }
 
 header.eat {
@@ -651,5 +744,24 @@ input[type=submit]:hover {
 @media (max-width: 925px) {
   body {
     font-size: 12px;
+  }
+  ul.tabMenu li a h3 {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  nav.siteMenu {
+    background: #ccc;
+  }
+  nav.siteMenu li.nav {
+    padding: 10% 7% 5%;
+  }
+  nav.siteMenu li.nav a {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+  }
+  nav.siteMenu li.nav a:hover {
+    letter-spacing: 2px;
   }
 }

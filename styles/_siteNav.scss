@@ -52,7 +52,8 @@
 	// styling for the hamburger menu link
 
 	nav.fixed {
-		position: fixed;			
+		position: fixed;	
+		z-index: 9999;		
 		a {
 			// @include midNight($frosted, $dkBlue);	
 			font-size: 1.75rem;		

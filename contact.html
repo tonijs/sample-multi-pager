@@ -1,110 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/style.css">
-	<link rel="stylesheet" href="styles/magnific.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Pacifico|Noto+Sans:400,700|Noto+Serif:400,700' rel='stylesheet' type='text/css'>
-	<title>Sunny San Diego</title>
-</head>
-<body class="animated fadeIn">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/magnific.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Pacifico|Noto+Sans:400,700|Noto+Serif:400,700' rel='stylesheet' type='text/css'>
+		<title>Sunny San Diego</title>
+	</head>
+	<body class="animated fadeIn">
 
-<header class="contact">
+		<header class="contact">
 
-	<nav class="fixed">	
-	<div class="midnightHeader default">		
-		<a href="#menu" class="menu-link">&#9776;</a>
-	</div>
-	</nav>
+			<nav class="fixed">	
+				<div class="midnightHeader default">		
+					<a href="#menu" class="menu-link">&#9776;</a>
+				</div>
+			</nav>
 
-	<nav id="menu" class="panel siteMenu" role="navigation">
-		<ul class="main">
-			<li class="nav"><a href="index.html">Home</a></li>
-			<li class="nav"><a href="when.html">When to go</a></li>
-			<li class="nav"><a href="stay.html">Where to stay</a></li>
-			<li class="nav"><a href="sights.html">What to see</a></li>
-			<li class="nav"><a href="eats.html">What to eat</a></li>
-			<li class="nav"><a href="nearby.html">Nearby</a></li>
-		</ul>
-		</div>
+			<nav id="menu" class="panel siteMenu" role="navigation">
+				<ul class="main">
+					<li class="nav"><a href="index.html">Home</a></li>
+					<li class="nav"><a href="when.html">When to go</a></li>
+					<li class="nav"><a href="stay.html">Where to stay</a></li>
+					<li class="nav"><a href="sights.html">What to see</a></li>
+					<li class="nav"><a href="eats.html">What to eat</a></li>
+					<li class="nav"><a href="nearby.html">Nearby</a></li>
+				</ul>
+				</div>
+			</nav>
 
-	</nav>
+			<div class="title">
+				<h1>Contact</h1>
+			</div>
 
-	<div class="title">
-	<h1>Contact</h1>
-	</div>
+			<div id="pier" class="source sunset mfp-hide">
+				<p><a href="https://commons.wikimedia.org/wiki/File:Sunset_pier.jpg">Sunset at Sunset Pier, Ocean Beach</a></p>
+				<p>By .Abdominator at en.wikipedia [Public domain], from Wikimedia Commons</p>
+			</div>
 
-	<div id="pier" class="source sunset mfp-hide">
-		<p><a href="https://commons.wikimedia.org/wiki/File:Sunset_pier.jpg">Sunset at Sunset Pier, Ocean Beach</a></p>
-		<p>By .Abdominator at en.wikipedia [Public domain], from Wikimedia Commons</p>
-	</div>
-
-	<div class="imgSource">
-		<a href="#pier" class="open-popup-link">?</a>
-	</div>
-</header>
-
+			<div class="imgSource">
+				<a href="#pier" class="open-popup-link">?</a>
+			</div>
+		</header>
 
 
+		<section class="contact">
+			<div class="wrapper">
+
+				<h3 class="comments">Comments or suggestions?</h3>
+
+					<div class="contactForm">
+
+				<!-- contact form -->
+					<form action="http://formspree.io/tonistockton@gmail.com"
+				      method="POST">	
+
+				<!-- hidden fields  -->
+				      	<input type="hidden" name="_subject" value="New submission from sandiego.ca site" />	
+				      	<input type="text" name="_gotcha" style="display:none" />
 
 
-
-<section class="contact">
-<div class="wrapper">
-
-
-
-<!-- button to display image info dialog -->
-
-
-
-
-	<h3 class="comments">Comments or suggestions?</h3>
-	<div class="contactForm">
+				<!-- actual input fields - add labels for accessibility ASAP-->
+						<input type="text" name="name" placeholder="Your name">		
+						<input type="email" name="_replyto" placeholder="Your email">
+						<textarea name="comment" cols="30" rows="10" placeholder="Comments"></textarea>
+						<input type="submit" value="Send!">
+					</form>
+				</div>
+			</div>
+		</section>
 
 
-<!-- contact form -->
-	<form action="http://formspree.io/tonistockton@gmail.com"
-      method="POST">	
-
-<!-- hidden fields  -->
-      	<input type="hidden" name="_subject" value="New submission from sandiego.ca site" />	
-      	<input type="text" name="_gotcha" style="display:none" />
-
-
-<!-- actual input fields -->
-		<input type="text" name="name" placeholder="Your name">		
-		<input type="email" name="_replyto" placeholder="Your email">
-		<textarea name="comment" cols="30" rows="10" placeholder="Comments"></textarea>
-		<input type="submit" value="Send!">
-	</form>
-</div>
-</div>
-</section>
+		<footer>
+			<div class="wrapper">
+				<ul class="footer">
+					<li><a href="resources.html">More Resources</a></li>
+					<li><span id="weather"></span></li>
+					<li><a href="contact.html">Contact!</a></li>
+				</ul>
+			</div>
+		</footer>	
 
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="scripts/jquery.big-slide.min.js"></script>
+		<script src="scripts/jquery.fitvids.js"></script>
+		<script src="scripts/jquery.smoothState.min.js"></script>
+		<script src="scripts/midnight.jquery.min.js"></script>
+		<script src="scripts/magnific.jquery.min.js"></script>
+		<script src="scripts/jquery.simpleWeather.min.js"></script>
+		<script src="scripts/script.js"></script>
 
-<footer>
-	<div class="wrapper">
-		<ul class="footer">
-			<li><a href="resources.html">More Resources</a></li>
-			<li><span id="weather"></span></li>
-			<li><a href="contact.html">Contact!</a></li>
-		</ul>
-	</div>
-</footer>	
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="scripts/jquery.big-slide.min.js"></script>
-<script src="scripts/jquery.fitvids.js"></script>
-<script src="scripts/jquery.smoothState.min.js"></script>
-<script src="scripts/midnight.jquery.min.js"></script>
-<script src="scripts/magnific.jquery.min.js"></script>
-<script src="scripts/jquery.simpleWeather.min.js"></script>
-<script src="scripts/script.js"></script>
-</body>
+	</body>
 
 </html>

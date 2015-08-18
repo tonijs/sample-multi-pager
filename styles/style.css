@@ -214,7 +214,6 @@ img {
 
 a {
   text-decoration: none;
-  outline: none;
 }
 
 p.accent {
@@ -230,6 +229,11 @@ figcaption p {
 
 figcaption p a.source {
   font-size: .75rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
 }
 
 header {
@@ -334,6 +338,19 @@ div.imgSource a.open-popup-link i.fa {
   padding: 2px;
 }
 
+ul.fa-ul li a {
+  color: #ddd;
+  border-bottom: 5px solid #5599dd;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+ul.fa-ul li a:hover {
+  background: -webkit-linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%);
+  background: linear-gradient(#223344, #223344 75%, #5599dd 75%, #5599dd 100%);
+}
+
 nav.siteMenu {
   background-color: rgba(204, 204, 204, 0.7);
   z-index: 9999;
@@ -394,6 +411,7 @@ ul.main li.nav.active a.active:hover {
 
 nav.fixed {
   position: fixed;
+  z-index: 9999;
 }
 
 nav.fixed a {
@@ -575,6 +593,13 @@ header.resources {
   background-position: center;
 }
 
+header.contact {
+  background: #223344 url("../images/sunset_pier.jpg");
+  background-size: cover;
+  height: 75vh;
+  background-position: center;
+}
+
 figure#tower a.image-link, figure#seaport a.image-link {
   background: #223344;
   border-bottom: none;
@@ -583,12 +608,14 @@ figure#tower a.image-link, figure#seaport a.image-link {
 #tower, #zoo, #grant {
   float: left;
   margin-right: 3%;
-  width: 25%;
 }
 
-#seaport {
+#seaport, #dmtc, #pacific {
   float: right;
   margin-left: 3%;
+}
+
+img.inText {
   width: 25%;
 }
 
@@ -640,23 +667,9 @@ ul.footer li a {
   margin: 0;
 }
 
-header.resources {
-  background: #223344 url("../images/geisel.jpg");
-  background-size: cover;
-  height: 75vh;
-  background-position: center;
-}
-
 section.contact {
   background: #110022;
   color: #eeddcc;
-}
-
-header.contact {
-  background: #223344 url("../images/sunset_pier.jpg");
-  background-size: cover;
-  height: 75vh;
-  background-position: center;
 }
 
 h3.comments {
@@ -745,9 +758,6 @@ input[type=submit]:hover {
   body {
     font-size: 12px;
   }
-  ul.tabMenu li a h3 {
-    font-size: 1rem;
-  }
   h1 {
     font-size: 2rem;
   }
@@ -763,5 +773,55 @@ input[type=submit]:hover {
   }
   nav.siteMenu li.nav a:hover {
     letter-spacing: 2px;
+  }
+  img.inText {
+    width: 50%;
+  }
+}
+
+@media (max-width: 780px) {
+  div.title {
+    width: 75%;
+  }
+  ul.footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul.footer li a {
+    font-size: .9rem;
+  }
+  img.inText {
+    width: 100%;
+  }
+  #tower, #zoo, #grant, #seaport {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: smaller versions of header images to reduce load times*/
+  header.eat {
+    background-image: url("../images/gaslamp-mob.jpg");
+  }
+  header.nearby {
+    background-image: url("../images/pch-mob.jpg");
+  }
+  header.sights {
+    background-image: url("../images/Mission_San_Diego_de_Alcala-mob.jpg");
+  }
+  header.stay {
+    background-image: url("../images/hoteldel-mob.jpg");
+  }
+  header.when {
+    background-image: url("../images/WindanseaBeachShack-mob.jpg");
+  }
+  header.home {
+    background-image: url("../images/San_Diego_Reflecting_Pond-mob.jpg");
+  }
+  header.resources {
+    background-image: url("../images/geisel-mob.jpg");
   }
 }

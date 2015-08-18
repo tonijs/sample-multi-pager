@@ -32,3 +32,13 @@ header.resources {
 	@include header ('../images/geisel.jpg', 75);
 	background-position: center;
 	}
+
+header.contact {
+	@include header ('../images/sunset_pier.jpg', 75);
+	background-position: center;
+	}
+
+
+
+
+

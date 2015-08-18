@@ -32,10 +32,7 @@
 
 // More Resources page
 
-header.resources {
-	@include header ('../images/geisel.jpg', 75);
-	background-position: center;
-}
+
 
 
 
@@ -46,10 +43,6 @@ section.contact {
 	color: $ltBrown;
 }
 
-header.contact {
-		@include header ('../images/sunset_pier.jpg', 75);
-		background-position: center;
-}
 
 h3.comments {
 	text-align: center;

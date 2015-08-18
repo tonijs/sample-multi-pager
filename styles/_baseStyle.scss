@@ -50,9 +50,6 @@ html {
 
 	a {
 		text-decoration: none;
-		// font-family: $accentFont;
-		outline: none;
-		// font-size: .8rem;
 	}
 
 	p.accent {
@@ -67,6 +64,11 @@ html {
 		a.source {
 			font-size: .75rem;
 		}
+	}
+
+	ul {
+		padding: 0;
+		list-style: none;
 	}
 
 // base styling for page headers. some details provided on individual page style sheets via the header mixin
@@ -137,3 +139,12 @@ html {
 		}	
 	}
 
+
+
+// replace list icons with map marker 
+
+ul.fa-ul {
+	li {
+		@include link(#ddd, $sky, $dkBlue);
+	}
+}

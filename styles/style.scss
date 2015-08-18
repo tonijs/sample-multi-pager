@@ -61,16 +61,6 @@ $purple: #110022;
 }
 
 
-// default styling for tips sections, if i use them
-
-@mixin tips($bc, $bgc) {
-	width: 70%;
-	border: 5px solid $bc;
-	background: darken($bgc, 5%);
-	margin: 0 auto;
-	padding: 0 1%;
-	border-radius: 15px;
-}
 
 // to change the colors of the hamburger menu link using the midnight plugin
 

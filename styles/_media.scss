@@ -26,10 +26,6 @@
 		font-size: 12px;
 	}
 
-	ul.tabMenu li a h3  {
-		font-size: 1rem;
-	}
-
 	h1 {
 		font-size: 2rem;
 	}
@@ -47,4 +43,72 @@
 				}
 			}
 		}
+	
+	img.inText {
+		width: 50%;
 	}
+
+
+
+	}
+
+
+@media (max-width: 780px) {
+
+	div.title {
+		width: 75%;
+	}
+
+
+	ul.footer {
+		flex-direction: column;
+		li {
+			a {
+				font-size: .9rem;
+			}
+		}
+	}
+
+	img.inText {
+		width: 100%;
+	}
+
+	#tower, #zoo, #grant, #seaport {
+		float: none;
+	}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: smaller versions of header images to reduce load times*/
+
+	header.eat {
+		background-image: url('../images/gaslamp-mob.jpg');
+		}
+
+	header.nearby {
+		background-image: url('../images/pch-mob.jpg');	
+		}
+
+	header.sights {
+		background-image: url('../images/Mission_San_Diego_de_Alcala-mob.jpg');
+		}
+
+	header.stay {
+		background-image: url('../images/hoteldel-mob.jpg');
+		}
+
+	header.when {
+		background-image: url('../images/WindanseaBeachShack-mob.jpg');
+		}
+
+	header.home {
+		background-image: url('../images/San_Diego_Reflecting_Pond-mob.jpg');
+		}
+
+	header.resources {
+		background-image: url('../images/geisel-mob.jpg');
+		}
+
+}
